@@ -84,10 +84,7 @@ void mergeSort(int low, int high){
     for(int y = low; y <= high; y++){
         arr[y] = B[y];
     }
-
 }
-
-    
 
 void output(){
     cout << "\nData setelah digunakan (MergeSort): ";
@@ -103,5 +100,4 @@ int main(){
     input();
     mergeSort(0, n-1);
     output();
-
 }
