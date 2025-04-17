@@ -7,7 +7,7 @@ int n;
 
 void input(){
     while (true){
-        cout << "Masukkan panjang element array: ";
+        cout << "Masukkan Panjang element array: ";
         cin >> n;
 
         if (n <= 20){
@@ -18,14 +18,35 @@ void input(){
 
         }  
     }
-    cout << "\n=====================";
-    cout << "\nInputkan Isi Element Array";
-    cout << "\n=====================" << endl;
 
-    for (int i = 0; i < n; i++)
-    {
+    cout << "\n==========================";
+    cout << "\nInputkan Isi Element Array";
+    cout << "\n==========================" << endl;
+
+    for (int i = 0; i < n; i++){
         cout << "Array index ke - " << i << ": ";
         cin >> arr[i];
     }
+}
+
+void mergeSort(int low, int high){
+    //step 1
+    if (low >= high){
+        return; //step 1.a
+    }
+}
+
     
+
+void output(){
+    cout << "\nData setelah digunakan (MergeSort): ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+int main(){
+
 }
